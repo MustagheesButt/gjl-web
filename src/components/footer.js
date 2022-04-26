@@ -7,6 +7,7 @@ export const Footer = () => {
         <div className="flex flex-col basis-1/4 mt-5">
           <h5 className="font-bold">Services</h5>
           <Link className="mt-2 text-gray-600 hover:text-gray-800" to='/services/ecommerce'>Ecommerce</Link>
+          <Link className="mt-2 text-gray-600 hover:text-gray-800" to='/services/portfolio-sites'>Portfolio/Static Sites</Link>
           <Link className="mt-2 text-gray-600 hover:text-gray-800" to='/services/mobile'>Mobile App Development</Link>
           <Link className="mt-2 text-gray-600 hover:text-gray-800" to='/services/crm'>CRM</Link>
         </div>

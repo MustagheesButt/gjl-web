@@ -16,7 +16,7 @@ export const Blog = () => {
 
   const postsRendered = posts.map((post) => {
     return (
-      <div className="m-5" key={post.id}>
+      <div key={`${post.id}`} className="m-5">
         <h2>{post.title.rendered}</h2>
         <p></p>
       </div>
@@ -32,7 +32,7 @@ export const Blog = () => {
         </div>
       </section>
       <section>
-        {postsRendered}
+        {postsRendered.length > 0 ? postsRendered : "Loading..."}
       </section>
     </Layout>
   )
